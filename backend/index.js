@@ -5,9 +5,12 @@ import morgan from "morgan";
 import connectDB from "./src/config/db.js";
 import AuthRoutes from "./src/routes/authRoutes.js";
 import UserRoutes from "./src/routes/userRoutes.js";
+import dotenv from 'dotenv'
 import http from "http";
 import { Server } from "socket.io";
 import { webSocket } from "./src/webSocket.js";
+
+dotenv.config();
 
 const app = express();
 
