@@ -1,5 +1,5 @@
 import React, { use, useEffect } from "react";
-import photo from "../assets/Steve-jobs.webp";
+import photo from "../assets/sample.webp";
 import { useState } from "react";
 import { FaCamera } from "react-icons/fa";
 import backend from "../config/api";
