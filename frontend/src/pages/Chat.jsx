@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import photo from "../assets/Steve-jobs.webp";
+import photo from "../assets/sample.webp";
 import { Link } from "react-router-dom";
 import backend from "../config/api";
 import Chatting from "../components/Chatting";
