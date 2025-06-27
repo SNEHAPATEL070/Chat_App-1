@@ -5,6 +5,7 @@ import morgan from "morgan";
 import connectDB from "./src/config/db.js";
 import AuthRoutes from "./src/routes/authRoutes.js";
 import UserRoutes from "./src/routes/userRoutes.js";
+
 import dotenv from 'dotenv'
 import http from "http";
 import { Server } from "socket.io";
@@ -21,6 +22,7 @@ app.use(morgan("dev"));
 
 app.use("/api/auth", AuthRoutes);
 app.use("/api/user", UserRoutes);
+
 
 app.get("/", (req, res) => {
   res.json({
